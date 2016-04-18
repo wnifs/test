@@ -1,0 +1,41 @@
+weinf@KEJI-3286 MINGW64 ~/Desktop/git
+$ git clone https://github.com/wnifs/test.git
+Cloning into 'test'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+
+weinf@KEJI-3286 MINGW64 ~/Desktop/git
+$ git init
+Initialized empty Git repository in C:/Users/weinf/Desktop/git/.git/
+
+weinf@KEJI-3286 MINGW64 ~/Desktop/git (master)
+$ git add .
+
+weinf@KEJI-3286 MINGW64 ~/Desktop/git (master)
+$ git commit -m "first"
+[master (root-commit) 8d7084f] first
+ 1 file changed, 45 insertions(+)
+ create mode 100644 test/phone1.html
+
+weinf@KEJI-3286 MINGW64 ~/Desktop/git (master)
+$ git remote add origin https://github.com/wnifs/test.git
+
+weinf@KEJI-3286 MINGW64 ~/Desktop/git (master)
+$ git push origin master
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Password for 'https://aa654321@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/wnifs/test.git/'
+
+weinf@KEJI-3286 MINGW64 ~/Desktop/git (master)
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 878 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/wnifs/test.git
+ * [new branch]      master -> master
+
+weinf@KEJI-3286 MINGW64 ~/Desktop/git (master)
+$
